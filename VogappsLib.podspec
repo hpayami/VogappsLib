@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.dependency 'PureLayout', '3.1.5'
   s.dependency 'PromiseKit', '6.13.1'
   s.dependency 'UICKeyChainStore', '2.1.2'
-  s.dependency 'Alamofire', '4.9.1'
+  s.dependency 'Alamofire', '5.4.0'
   s.dependency 'ObjectMapper', '4.2.0'
   s.dependency 'FBSDKLoginKit', '9.0.1'
   
