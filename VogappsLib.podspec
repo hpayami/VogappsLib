@@ -8,11 +8,11 @@ Pod::Spec.new do |s|
   s.author           = { "Ogan Topkaya" => "otopkaya@me.com" }
   s.source           = { :git => "git@github.com:hpayami/vogappslib.git", :tag => s.version }
 
-  s.platform     = :ios, '9.0'
+  s.platform     = :ios, '12.0'
   s.requires_arc = true
   s.source_files = 'Source/**/*'
   s.public_header_files = 'Source/**/*.h'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 
   s.dependency 'PureLayout', '3.1.5'
   s.dependency 'PromiseKit', '6.13.1'
