@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="VogappsLib_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzu-r1-JdQ">
+                                <rect key="frame" x="165" y="170" width="45" height="30"/>
+                                <state key="normal" title="Popup"/>
+                                <connections>
+                                    <action selector="presentPopup:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="u09-LR-hbu"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JFb-Xb-WU8">
+                                <rect key="frame" x="175" y="318.5" width="25" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPL-bf-vuc">
+                                <rect key="frame" x="67.5" y="20" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="aOw-hU-5do"/>
+                                    <constraint firstAttribute="height" constant="128" id="gcu-Ju-e7f"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M22-tc-AoA">
+                                <rect key="frame" x="123" y="392" width="129" height="30"/>
+                                <state key="normal" title="Login To Facebook"/>
+                                <connections>
+                                    <action selector="loginToFacebook:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dFf-TX-Xik"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMO-Pp-QvB">
+                                <rect key="frame" x="147.5" y="457" width="80" height="30"/>
+                                <state key="normal" title="Get Friends"/>
+                                <connections>
+                                    <action selector="getFriends:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BCM-JL-6n6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CMO-Pp-QvB" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="2le-w3-uS2"/>
+                            <constraint firstItem="nzu-r1-JdQ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="BFa-ya-O6h"/>
+                            <constraint firstItem="M22-tc-AoA" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Oy9-Bk-cRQ"/>
+                            <constraint firstItem="oPL-bf-vuc" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="RID-3B-67n"/>
+                            <constraint firstItem="nzu-r1-JdQ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="150" id="RNg-hN-24z"/>
+                            <constraint firstItem="CMO-Pp-QvB" firstAttribute="top" secondItem="M22-tc-AoA" secondAttribute="bottom" constant="35" id="RR7-hD-jaK"/>
+                            <constraint firstItem="JFb-Xb-WU8" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="VEf-Wc-FBQ"/>
+                            <constraint firstItem="oPL-bf-vuc" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="ejb-xO-jzm"/>
+                            <constraint firstItem="M22-tc-AoA" firstAttribute="top" secondItem="JFb-Xb-WU8" secondAttribute="bottom" constant="43.5" id="jgl-ed-N6l"/>
+                            <constraint firstItem="JFb-Xb-WU8" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="rGn-ox-D2K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="JFb-Xb-WU8" id="uB7-Jo-g1r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193" y="248"/>
+        </scene>
+    </scenes>
+</document>

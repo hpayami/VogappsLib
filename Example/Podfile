@@ -1,0 +1,14 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+project 'VogappsLib'
+platform :ios, '9.0'
+
+target 'VogappsLib_Example' do
+  pod "VogappsLib", :path => "../"
+end
+
+target 'VogappsLib_Tests' do
+  pod "VogappsLib", :path => "../"
+end
+
+
