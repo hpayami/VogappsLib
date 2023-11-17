@@ -13,9 +13,9 @@ Pod::Spec.new do |s|
   s.source_files = 'Source/**/*'
   s.public_header_files = 'Source/**/*.h'
   s.swift_version = '5.0'
-
+ 
   s.dependency 'PureLayout', '3.1.5'
-  s.dependency 'PromiseKit', '6.18.1'
+  #s.dependency 'PromiseKit', '6.18.1'
   s.dependency 'UICKeyChainStore', '2.1.2'
   s.dependency 'Alamofire', '5.4.4'
   s.dependency 'ObjectMapper', '4.2.0'
